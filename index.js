@@ -1,17 +1,11 @@
 func = (objs)=>{
    var obj=[]
    obj=objs
-   var name=obj.name
-   var alpha=obj.alpha2Code
-   var cap=obj.capital
-   var region=obj.region
-   var borders=[obj.borders]
-   var array={"name":name,"alpha2Code":alpha,"capital":cap,"region":region,"borders":borders}
-    document.getElementById("data1").innerHTML=array.name;
-    document.getElementById("data2").innerHTML=array.alpha;
-    document.getElementById("data3").innerHTML=array.cap;
-    document.getElementById("data4").innerHTML=array.region;
-    document.getElementById("data5").innerHTML=array.borders;
+    document.getElementById("data1").innerHTML=obj.name;
+    document.getElementById("data2").innerHTML=obj.alpha2Code;
+    document.getElementById("data3").innerHTML=obj.capital;
+    document.getElementById("data4").innerHTML=obj.region;
+    document.getElementById("data5").innerHTML=obj.borders;
 }
 
 fetch('https://restcountries.eu/rest/v2/all/')
